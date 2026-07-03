@@ -15,6 +15,13 @@ This comprehensive guide is designed for conducting technical interviews with Se
 9. [SQL Tricky Questions](#chapter-9-sql-tricky-questions)
 10. [AI & Copilot-Related Questions](#chapter-10-ai--copilot-related-questions)
 11. [Additional Topics](#chapter-11-additional-topics)
+12. [Inheritance, Polymorphism & Practical OOP](#chapter-12-inheritance-polymorphism-and-practical-oop-questions)
+13. [SOLID Principles & OOP Fundamentals](#chapter-13-solid-principles-and-oop-fundamentals)
+14. [File Handling & Memory-Efficient I/O](#chapter-14-file-handling-and-memory-efficient-io)
+15. [Design Patterns & DSA](#chapter-15-design-patterns-and-dsa-interview-questions)
+16. [Simple System Design](#chapter-16-simple-system-design-questions)
+17. [Java Tricky Questions](#chapter-17-java-tricky-questions-for-confusing-interview-scenarios)
+18. [Microservices Design Patterns](#chapter-18-microservices-design-patterns-interview-questions)
 
 ### Additional Topics Included:
 
@@ -57,3 +64,10 @@ This comprehensive guide is designed for conducting technical interviews with Se
 - [Chapter 9: SQL Questions](./Chapter9_SQL.md)
 - [Chapter 10: AI & Copilot](./Chapter10_AI_Copilot.md)
 - [Chapter 11: Additional Topics](./Chapter11_AdditionalTopics.md)
+- [Chapter 12: Inheritance & Polymorphism](./Chapter12_InheritancePolymorphism.md)
+- [Chapter 13: SOLID & OOP Principles](./Chapter13_SOLID_OOPs.md)
+- [Chapter 14: File Handling](./Chapter14_FileHandling.md)
+- [Chapter 15: Design Patterns & DSA](./Chapter15_DesignPatternsAndDSA.md)
+- [Chapter 16: System Design Basics](./Chapter16_SystemDesignBasics.md)
+- [Chapter 17: Java Tricky Questions](./Chapter17_JavaTrickyQuestions.md)
+- [Chapter 18: Microservices Design Patterns](./Chapter18_MicroservicesDesignPatterns.md)

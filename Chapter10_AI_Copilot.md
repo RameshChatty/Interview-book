@@ -398,7 +398,200 @@ public void testValidateEmailInvalidFormat() {
 
 ---
 
-## Question 5: Impact of AI on Software Development
+## Question 5: What is prompt engineering and why does it matter?
+
+**Time:** 10-12 minutes
+
+### Answer:
+
+Prompt engineering is the practice of writing clear, specific instructions so the AI produces better output.
+
+**Good prompting principles:**
+
+1. Be specific about the task
+2. Provide context and constraints
+3. Ask for the format you want
+4. Break large tasks into smaller steps
+5. Give examples when possible
+
+```text
+Bad prompt:
+Write a Java service.
+
+Better prompt:
+Write a Spring Boot service for user registration.
+Use DTOs, validation, and a repository layer.
+Return a JSON response and include unit tests.
+```
+
+**Why it matters:**
+
+- Better prompts reduce hallucinations.
+- They improve accuracy and relevance.
+- They save time because fewer iterations are needed.
+
+**Common prompt patterns:**
+
+```text
+Role + task + context + constraints + output format
+Example:
+You are a senior Java engineer.
+Generate a REST controller for user creation.
+Use Spring Boot 3, validation, and DTOs.
+Return only Java code and a short explanation.
+```
+
+---
+
+## Question 6: What is the difference between an LLM and a model?
+
+**Time:** 8-10 minutes
+
+### Answer:
+
+An LLM is a type of model, but not every model is an LLM.
+
+**LLM (Large Language Model):**
+
+- Trained on large amounts of text data.
+- Good at language tasks like summarization, generation, Q&A, reasoning, and code assistance.
+
+**Model:**
+
+- A general term for a trained machine learning system.
+- Models can be for vision, speech, classification, ranking, embeddings, or text generation.
+
+**Example:**
+
+- GPT-style systems are LLMs.
+- A recommendation model or image generation model is not an LLM.
+
+**Interview angle:**
+
+- Candidates should understand that "model" is broader than "LLM".
+- Different tasks need different model categories.
+
+---
+
+## Question 7: Which model should be used for what purpose?
+
+**Time:** 10-12 minutes
+
+### Answer:
+
+Model choice depends on the job.
+
+**Use cases:**
+
+- Code generation: strong coding models for autocomplete, refactoring, tests
+- Summarization: models optimized for long-context understanding
+- Chat / support: conversational models with good reasoning
+- Classification / tagging: smaller models may be enough
+- Embeddings: models built for similarity and retrieval
+- Image generation: image models, not text-only models
+
+**Practical examples:**
+
+```text
+Use a coding-focused model for:
+- code completion
+- unit test generation
+- API scaffolding
+
+Use a general-purpose model for:
+- brainstorming
+- documentation drafting
+- explaining architecture
+
+Use a smaller/faster model for:
+- simple classification
+- lightweight chat assistants
+- low-latency tasks
+```
+
+**Senior developer expectation:**
+
+- Understand that there is no single best model for everything.
+- Choose based on quality, latency, cost, and context needs.
+
+---
+
+## Question 8: How can a team save tokens or credits while using AI tools?
+
+**Time:** 8-10 minutes
+
+### Answer:
+
+Saving tokens or credits is important for cost control and performance.
+
+**Practical ways to reduce cost:**
+
+1. Use smaller models for simple tasks
+2. Give concise prompts instead of long, repeated context
+3. Reuse context carefully instead of sending the same content repeatedly
+4. Break large tasks into smaller requests
+5. Ask for short outputs when possible
+6. Use retrieval-based approaches instead of dumping huge files into prompts
+7. Cache common responses when appropriate
+
+**Example:**
+
+```text
+Expensive approach:
+Send the whole codebase and ask for a full refactor.
+
+Cheaper approach:
+Send only the relevant file, the requirement, and the expected output format.
+```
+
+**Best practices:**
+
+- Provide only the context that is necessary.
+- Use clear instructions to avoid multiple retries.
+- Use model routing: cheap model for simple tasks, stronger model for complex logic.
+
+---
+
+## Question 9: What is the use of custom instructions?
+
+**Time:** 8-10 minutes
+
+### Answer:
+
+Custom instructions are reusable preferences or rules that guide the AI on how to respond.
+
+**Typical uses:**
+
+- Always use Java 17+ examples
+- Prefer Spring Boot conventions
+- Avoid using Lombok unless requested
+- Keep responses concise and structured
+- Follow company coding standards
+- Avoid writing insecure code
+
+**Example:**
+
+```text
+Custom instructions:
+- Prefer clean Java code with clear naming.
+- Use Spring Boot 3 conventions.
+- Avoid over-explaining.
+- Include unit tests when generating business logic.
+```
+
+**Why they are useful:**
+
+- Improve consistency across prompts.
+- Reduce repetitive instructions.
+- Help teams align to coding standards and preferred style.
+
+**Interview angle:**
+
+- Senior developers should see custom instructions as a productivity and governance tool, not just a convenience feature.
+
+---
+
+## Question 10: Impact of AI on Software Development
 
 **Time:** 10-15 minutes
 
