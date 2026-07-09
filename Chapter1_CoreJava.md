@@ -8,8 +8,6 @@ This chapter covers fundamental Java concepts that a senior developer should hav
 
 ## Question 1: Explain the difference between `==` and `.equals()` method
 
-**Time:** 5-7 minutes
-
 ### Answer:
 
 `==` is a reference comparison operator, while `.equals()` is a value comparison method.
@@ -73,8 +71,6 @@ public class Employee {
 
 ## Question 2: Explain access modifiers and their visibility scope
 
-**Time:** 5-7 minutes
-
 ### Answer:
 
 Java has 4 access levels:
@@ -137,8 +133,6 @@ public class Service {
 ---
 
 ## Question 3: What is the `final` keyword and its multiple uses?
-
-**Time:** 5-7 minutes
 
 ### Answer:
 
@@ -221,8 +215,6 @@ int value = example.getValue();  // Can be replaced with 42 at compile time
 ---
 
 ## Question 4: Explain immutability and how to create an immutable class
-
-**Time:** 7-10 minutes
 
 ### Answer:
 
@@ -348,8 +340,6 @@ public class CorrectImmutable {
 ---
 
 ## Question 5: What are static variables and methods? When should they be used?
-
-**Time:** 5-7 minutes
 
 ### Answer:
 
@@ -486,8 +476,6 @@ public class ThreadSafeCounter {
 
 ## Question 6: Explain the difference between `String`, `StringBuffer`, and `StringBuilder`
 
-**Time:** 5-7 minutes
-
 ### Answer:
 
 | Aspect      | String                     | StringBuffer          | StringBuilder   |
@@ -541,8 +529,6 @@ System.out.println(s1 == s4);  // true (intern returns pool reference)
 ---
 
 ## Question 7: What is the difference between a class and an interface? When would you use each?
-
-**Time:** 7-10 minutes
 
 ### Answer:
 
@@ -657,8 +643,6 @@ public interface AuditableTransaction extends PaymentProcessor {
 ---
 
 ## Question 8: Explain Java platform components, class loading, and the parent delegation model
-
-**Time:** 8-10 minutes
 
 ### Answer:
 

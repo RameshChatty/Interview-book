@@ -8,8 +8,6 @@ Real-world coding problems that assess practical Java knowledge, problem-solving
 
 ## Question 1: Implement LRU Cache
 
-**Time:** 20-25 minutes
-
 ### Problem:
 
 Implement a Least Recently Used (LRU) Cache that supports:
@@ -157,8 +155,6 @@ System.out.println(cache.get(2));  // null (evicted)
 
 ## Question 2: Find Duplicate in Array (1 to N)
 
-**Time:** 15-20 minutes
-
 ### Problem:
 
 Array contains numbers 1 to N, with one number appearing twice. Find it without:
@@ -273,8 +269,6 @@ Result: 2
 
 ## Question 3: Group Anagrams
 
-**Time:** 15 minutes
-
 ### Problem:
 
 Given array of strings, group anagrams together.
@@ -344,8 +338,6 @@ private String getCharKey(String str) {
 ---
 
 ## Question 4: Merge K Sorted Lists
-
-**Time:** 20 minutes
 
 ### Problem:
 
@@ -437,8 +429,6 @@ private ListNode merge(ListNode l1, ListNode l2) {
 ---
 
 ## Question 5: Word Search II (Trie + DFS)
-
-**Time:** 25 minutes
 
 ### Problem:
 

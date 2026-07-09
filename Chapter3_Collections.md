@@ -8,8 +8,6 @@ The Collections Framework is crucial for Java development. This chapter covers t
 
 ## Question 1: Explain the Collections Hierarchy
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 The Collections Framework is built on these core interfaces:
@@ -80,8 +78,6 @@ map.forEach((key, val) -> System.out.println(key + "=" + val));
 ---
 
 ## Question 2: ArrayList vs LinkedList - When to use each?
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -229,8 +225,6 @@ class LinkedList<E> {
 
 ## Question 3: HashSet vs TreeSet vs LinkedHashSet
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 | Feature        | HashSet    | TreeSet        | LinkedHashSet                   |
@@ -347,8 +341,6 @@ employees.add(new Employee("Bob", 60000));
 ---
 
 ## Question 4: HashMap vs TreeMap vs ConcurrentHashMap
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -485,8 +477,6 @@ ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
 
 ## Question 5: Explain iterating over collections and ConcurrentModificationException
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 ```java
@@ -578,8 +568,6 @@ class ArrayList<E> {
 ---
 
 ## Question 6: Collections utility methods and best practices
-
-**Time:** 5-7 minutes
 
 ### Answer:
 
