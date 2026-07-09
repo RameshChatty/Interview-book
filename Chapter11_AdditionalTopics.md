@@ -8,8 +8,6 @@ Additional critical topics that separate senior developers from mid-level: Syste
 
 ## Question 1: System Design Fundamentals
 
-**Time:** 15-20 minutes
-
 ### Answer:
 
 **Key Components of Scalable Systems:**
@@ -121,8 +119,6 @@ Solutions:
 ---
 
 ## Question 2: Security Best Practices
-
-**Time:** 12-15 minutes
 
 ### Answer:
 
@@ -276,8 +272,6 @@ public class PaymentService {
 ---
 
 ## Question 3: Design Patterns for Senior Developers
-
-**Time:** 15-20 minutes
 
 ### Answer:
 
@@ -497,8 +491,6 @@ processor.checkout(100);  // Use strategy
 
 ## Question 4: Database Transactions and Consistency
 
-**Time:** 12-15 minutes
-
 ### Answer:
 
 **ACID Properties:**
@@ -631,8 +623,6 @@ public class NotificationService {
 
 ## Question 5: Docker and Containerization Basics
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **Dockerfile Example:**
@@ -756,8 +746,6 @@ spec:
 ---
 
 ## Question 6: Monitoring, Logging, and Observability
-
-**Time:** 12-15 minutes
 
 ### Answer:
 

@@ -8,8 +8,6 @@ Spring Boot has become the standard for Java development. Senior developers must
 
 ## Question 1: Spring Boot Fundamentals and Autoconfiguration
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **Spring Boot Basics:**
@@ -141,8 +139,6 @@ public class AppConfig {
 ---
 
 ## Question 2: Transaction Management with @Transactional
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -289,8 +285,6 @@ public class PaymentService {
 
 ## Question 3: Spring Data JPA and Repository Pattern
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **Repository Pattern:**
@@ -431,8 +425,6 @@ public class Student {
 
 ## Question 4: Exception Handling and Error Response
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 **Global Exception Handler:**
@@ -502,8 +494,6 @@ public User getUser(@PathVariable Long id) {
 ---
 
 ## Question 5: Microservices Architecture and Communication
-
-**Time:** 12-15 minutes
 
 ### Answer:
 
@@ -643,8 +633,6 @@ spring:
 
 ## Question 6: Handling Distributed Transactions (Saga Pattern)
 
-**Time:** 12-15 minutes
-
 ### Answer:
 
 **Problem: ACID transactions across services don't work (no distributed lock)**
@@ -782,8 +770,6 @@ public class PaymentService {
 ---
 
 ## Question 7: Microservices resilience patterns and failure handling
-
-**Time:** 10-12 minutes
 
 ### Answer:
 

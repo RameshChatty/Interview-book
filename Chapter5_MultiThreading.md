@@ -8,8 +8,6 @@ Multi-threading is critical for building scalable systems. This chapter covers t
 
 ## Question 1: Thread Basics - Creating and Starting Threads
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 Two main ways to create threads:
@@ -100,8 +98,6 @@ thread.setPriority(Thread.MAX_PRIORITY); // 10 (higher = more CPU time)
 ---
 
 ## Question 2: Synchronization and Thread Safety
-
-**Time:** 12-15 minutes
 
 ### Answer:
 
@@ -298,8 +294,6 @@ public void writeData() {
 
 ## Question 3: Producer-Consumer Pattern and wait()/notify()
 
-**Time:** 12-15 minutes
-
 ### Answer:
 
 **wait() and notify():**
@@ -434,8 +428,6 @@ new Thread(() -> {
 
 ## Question 4: ThreadPool and ExecutorService
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 Creating threads for each task is expensive. Thread pools reuse threads.
@@ -569,8 +561,6 @@ List<Future<Integer>> allFutures = executor.invokeAll(tasks);
 
 ## Question 5: Concurrent Collections
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 Regular collections are not thread-safe. Use concurrent versions for multi-threading.
@@ -662,8 +652,6 @@ try {
 ---
 
 ## Question 6: Deadlock - Detection and Prevention
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -800,8 +788,6 @@ if (deadlockedThreads != null && deadlockedThreads.length > 0) {
 ---
 
 ## Question 7: volatile, happens-before, and Memory Visibility
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
