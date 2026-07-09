@@ -27,6 +27,7 @@ This comprehensive guide is designed for conducting technical interviews with Se
 21. [Advanced Backend Scenarios & Concept Deep-Dives](#chapter-21-advanced-backend-scenarios--concept-deep-dives)
 22. [Interview Shortlist — Core Java, Spring, SQL, System Design & Coding](#chapter-22-interview-shortlist--core-java-spring-sql-system-design--coding)
 23. [Java Backend Developer Guide — Language, OOP, Concurrency, Streams, Spring & Security](#chapter-23-java-backend-developer-guide--language-oop-concurrency-streams-spring--security)
+24. [Production Incident Playbook (Deep-Dive Troubleshooting)](#chapter-24-production-incident-playbook-deep-dive-troubleshooting)
 25. [Java Coding Programs — Arrays & Strings](#chapter-25-java-coding-programs--arrays--strings)
 
 ### Additional Topics Included:
@@ -82,4 +83,5 @@ This comprehensive guide is designed for conducting technical interviews with Se
 - [Chapter 21: Advanced Backend Scenarios & Concept Deep-Dives](./Chapter21_AdvancedScenariosAndConcepts.md)
 - [Chapter 22: Interview Shortlist — Core Java, Spring, SQL, System Design & Coding](./Chapter22_InterviewShortlistAndCoding.md)
 - [Chapter 23: Java Backend Developer Guide — Language, OOP, Concurrency, Streams, Spring & Security](./Chapter23_JavaBackendDeveloperGuide.md)
+- [Chapter 24: Production Incident Playbook (Deep-Dive Troubleshooting)](./Chapter24_ProductionIncidentPlaybook.md)
 - [Chapter 25: Java Coding Programs — Arrays & Strings](./Chapter25_JavaCodingPrograms.md)
