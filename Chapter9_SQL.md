@@ -8,8 +8,6 @@ SQL knowledge is essential for backend development. This chapter covers complex 
 
 ## Question 1: Complex JOIN Scenarios
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **INNER JOIN vs LEFT JOIN vs RIGHT JOIN:**
@@ -91,8 +89,6 @@ ORDER BY u.name, o.id;
 
 ## Question 2: GROUP BY with HAVING
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 ```sql
@@ -149,8 +145,6 @@ GROUP BY segment;
 ---
 
 ## Question 3: Window Functions
-
-**Time:** 12-15 minutes
 
 ### Answer:
 
@@ -257,8 +251,6 @@ FROM employees;
 
 ## Question 4: Common Table Expressions (CTE) and Recursive Queries
 
-**Time:** 12-15 minutes
-
 ### Answer:
 
 **Simple CTE:**
@@ -344,8 +336,6 @@ SELECT * FROM date_series;
 
 ## Question 5: Performance Optimization and Index Strategy
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **EXPLAIN PLAN:**
@@ -423,8 +413,6 @@ SELECT * FROM users u WHERE NOT EXISTS (
 ---
 
 ## Question 6: Transactions and ACID Properties
-
-**Time:** 10-12 minutes
 
 ### Answer:
 

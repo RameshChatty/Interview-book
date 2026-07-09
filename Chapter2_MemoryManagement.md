@@ -8,8 +8,6 @@ This chapter covers JVM memory structure, garbage collection algorithms, memory 
 
 ## Question 1: Explain JVM Memory Structure
 
-**Time:** 7-10 minutes
-
 ### Answer:
 
 The JVM memory is divided into several regions:
@@ -109,8 +107,6 @@ class Person {
 ---
 
 ## Question 2: What is Garbage Collection and how does it work?
-
-**Time:** 10-15 minutes
 
 ### Answer:
 
@@ -247,8 +243,6 @@ java -Xmx4G \           # Max heap 4GB
 ---
 
 ## Question 3: What causes memory leaks and how do you detect them?
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -458,8 +452,6 @@ public class HeapDumpUtil {
 
 ## Question 4: What is OutOfMemoryError and its different types?
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 OutOfMemoryError occurs when JVM cannot allocate sufficient memory.
@@ -595,8 +587,6 @@ public class OOMHandling {
 ---
 
 ## Question 5: How do you monitor and optimize garbage collection?
-
-**Time:** 10-12 minutes
 
 ### Answer:
 

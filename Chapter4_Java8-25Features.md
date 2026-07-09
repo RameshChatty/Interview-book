@@ -8,8 +8,6 @@ Modern Java features have transformed development. Senior developers must be pro
 
 ## Question 1: Explain Lambda Expressions and Functional Interfaces
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 A lambda is an anonymous function that provides a clear way to implement functional interfaces.
@@ -119,8 +117,6 @@ strings.forEach(print);
 ---
 
 ## Question 2: Streams API - Map, Filter, Reduce, Collect
-
-**Time:** 15-20 minutes
 
 ### Answer:
 
@@ -336,8 +332,6 @@ long count = largeList.parallelStream()  // Multi-threaded
 
 ## Question 3: Optional - Handling null values
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 `Optional<T>` is a container for an optional value (either present or empty).
@@ -438,8 +432,6 @@ String phone = Optional.ofNullable(user)
 
 ## Question 4: Default Methods and Static Methods in Interfaces (Java 8)
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 **Default Methods:**
@@ -532,8 +524,6 @@ class Implementation implements Interface1, Interface2 {
 
 ## Question 5: Date/Time API (Java 8) - LocalDate, LocalDateTime, ZonedDateTime
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 The old `java.util.Date` was mutable and error-prone. Java 8 introduced immutable date/time classes.
@@ -593,8 +583,6 @@ String formatted = LocalDateTime.now().format(formatter);
 ---
 
 ## Question 6: Records (Java 14-16) - Immutable Data Classes
-
-**Time:** 8-10 minutes
 
 ### Answer:
 
@@ -680,8 +668,6 @@ record Rectangle(double width, double height) implements Shape {}
 
 ## Question 7: Pattern Matching (Java 16, 17, 21+)
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 Pattern matching simplifies type checking and extraction.
@@ -746,8 +732,6 @@ String info = switch (shape) {
 
 ## Question 8: Virtual Threads (Java 19 - Project Loom)
 
-**Time:** 10-15 minutes
-
 ### Answer:
 
 Virtual threads are lightweight threads managed by the JVM, not OS threads.
@@ -808,8 +792,6 @@ Virtual Threads (Lightweight):
 ---
 
 ## Question 9: Java 9+ platform and language feature highlights
-
-**Time:** 10-12 minutes
 
 ### Answer:
 

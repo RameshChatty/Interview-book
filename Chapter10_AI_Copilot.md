@@ -8,8 +8,6 @@ AI-powered development tools like GitHub Copilot are transforming development. U
 
 ## Question 1: GitHub Copilot Capabilities and Limitations
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **What GitHub Copilot Can Do:**
@@ -130,8 +128,6 @@ ps.setString(1, userId);  // Parameterized query
 
 ## Question 2: Best Practices for Using AI-Assisted Development
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **Do's:**
@@ -214,8 +210,6 @@ List<String> userInput = getUserInput();
 ---
 
 ## Question 3: Detecting AI-Generated Code Issues
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -319,8 +313,6 @@ try {
 
 ## Question 4: Prompt Engineering for Better Results
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **Good Prompts (in code comments):**
@@ -400,8 +392,6 @@ public void testValidateEmailInvalidFormat() {
 
 ## Question 5: What is prompt engineering and why does it matter?
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 Prompt engineering is the practice of writing clear, specific instructions so the AI produces better output.
@@ -445,8 +435,6 @@ Return only Java code and a short explanation.
 
 ## Question 6: What is the difference between an LLM and a model?
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 An LLM is a type of model, but not every model is an LLM.
@@ -474,8 +462,6 @@ An LLM is a type of model, but not every model is an LLM.
 ---
 
 ## Question 7: Which model should be used for what purpose?
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -518,8 +504,6 @@ Use a smaller/faster model for:
 
 ## Question 8: How can a team save tokens or credits while using AI tools?
 
-**Time:** 8-10 minutes
-
 ### Answer:
 
 Saving tokens or credits is important for cost control and performance.
@@ -553,8 +537,6 @@ Send only the relevant file, the requirement, and the expected output format.
 ---
 
 ## Question 9: What is the use of custom instructions?
-
-**Time:** 8-10 minutes
 
 ### Answer:
 
@@ -592,8 +574,6 @@ Custom instructions:
 ---
 
 ## Question 10: Impact of AI on Software Development
-
-**Time:** 10-15 minutes
 
 ### Answer:
 

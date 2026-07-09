@@ -8,8 +8,6 @@ Kafka is a distributed event streaming platform used for building real-time appl
 
 ## Question 1: Kafka Architecture and Key Components
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **Kafka Architecture:**
@@ -63,8 +61,6 @@ Consumer Group: Multiple consumers reading same topic
 ---
 
 ## Question 2: Kafka Producers - Sending Messages
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -202,8 +198,6 @@ public class CustomPartitioner implements Partitioner {
 
 ## Question 3: Kafka Consumers - Reading Messages
 
-**Time:** 12-15 minutes
-
 ### Answer:
 
 **Basic Consumer:**
@@ -330,8 +324,6 @@ long position = consumer.position(
 
 ## Question 4: Kafka Partitioning and Ordering Guarantees
 
-**Time:** 10-12 minutes
-
 ### Answer:
 
 **Ordering Guarantees:**
@@ -393,8 +385,6 @@ Sweet spot:
 ---
 
 ## Question 5: Kafka Topics, Replication, and Durability
-
-**Time:** 10-12 minutes
 
 ### Answer:
 
@@ -472,8 +462,6 @@ After Broker 1 recovery:
 ---
 
 ## Question 6: Kafka Stream Processing and Common Patterns
-
-**Time:** 12-15 minutes
 
 ### Answer:
 
