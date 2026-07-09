@@ -22,6 +22,7 @@ This comprehensive guide is designed for conducting technical interviews with Se
 16. [Simple System Design](#chapter-16-simple-system-design-questions)
 17. [Java Tricky Questions](#chapter-17-java-tricky-questions-for-confusing-interview-scenarios)
 18. [Microservices Design Patterns](#chapter-18-microservices-design-patterns-interview-questions)
+19. [Altimetrik Java Backend Interview Questions (≈4 Years)](#chapter-19-altimetrik-java-backend-developer-interview-questions-4-years-experience)
 
 ### Additional Topics Included:
 
@@ -71,3 +72,4 @@ This comprehensive guide is designed for conducting technical interviews with Se
 - [Chapter 16: System Design Basics](./Chapter16_SystemDesignBasics.md)
 - [Chapter 17: Java Tricky Questions](./Chapter17_JavaTrickyQuestions.md)
 - [Chapter 18: Microservices Design Patterns](./Chapter18_MicroservicesDesignPatterns.md)
+- [Chapter 19: Altimetrik Java Backend Interview Questions (≈4 Years)](./Chapter19_AltimetrikJavaBackend.md)
