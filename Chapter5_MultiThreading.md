@@ -501,8 +501,12 @@ Future<String> future = executor.submit(callable);
 try {
     String result = future.get();  // Blocking call
     System.out.println(result);
-} catch (InterruptedException | ExecutionException e) {
-    e.printStackTrace();
+} catch (InterruptedException e) {
+    Thread.currentThread().interrupt();  // Restore interrupt status
+    throw new RuntimeException("Interrupted while waiting for result", e);
+} catch (ExecutionException e) {
+    // Unwrap and propagate the real cause of the task failure
+    throw new RuntimeException("Task execution failed", e.getCause());
 }
 
 // Non-blocking checks
@@ -667,7 +671,7 @@ class DeadlockExample {
     public void thread1Work() {
         synchronized (lock1) {
             System.out.println("Thread 1: Acquired lock1");
-            try { Thread.sleep(100); } catch (InterruptedException e) {}
+            try { Thread.sleep(100); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
 
             synchronized (lock2) {
                 System.out.println("Thread 1: Acquired lock2");
@@ -678,7 +682,7 @@ class DeadlockExample {
     public void thread2Work() {
         synchronized (lock2) {
             System.out.println("Thread 2: Acquired lock2");
-            try { Thread.sleep(100); } catch (InterruptedException e) {}
+            try { Thread.sleep(100); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
 
             synchronized (lock1) {
                 System.out.println("Thread 2: Acquired lock1");

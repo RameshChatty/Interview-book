@@ -597,7 +597,8 @@ public class InventoryService {
             // Emit success event
             kafkaTemplate.send("inventory-updated", message);
         } catch (Exception e) {
-            // Emit failure event
+            // Log the cause, then emit failure event for compensation
+            log.error("Inventory update failed for order, emitting failure event", e);
             kafkaTemplate.send("inventory-failed", message);
         }
     }
