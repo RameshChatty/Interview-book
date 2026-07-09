@@ -25,6 +25,7 @@ This comprehensive guide is designed for conducting technical interviews with Se
 19. [Altimetrik Java Backend Interview Questions (≈4 Years)](#chapter-19-altimetrik-java-backend-developer-interview-questions-4-years-experience)
 20. [Production-Level Scenario Questions](#chapter-20-production-level-scenario-questions)
 21. [Advanced Backend Scenarios & Concept Deep-Dives](#chapter-21-advanced-backend-scenarios--concept-deep-dives)
+22. [Interview Shortlist — Core Java, Spring, SQL, System Design & Coding](#chapter-22-interview-shortlist--core-java-spring-sql-system-design--coding)
 
 ### Additional Topics Included:
 
@@ -77,3 +78,4 @@ This comprehensive guide is designed for conducting technical interviews with Se
 - [Chapter 19: Altimetrik Java Backend Interview Questions (≈4 Years)](./Chapter19_AltimetrikJavaBackend.md)
 - [Chapter 20: Production-Level Scenario Questions](./Chapter20_ProductionScenarios.md)
 - [Chapter 21: Advanced Backend Scenarios & Concept Deep-Dives](./Chapter21_AdvancedScenariosAndConcepts.md)
+- [Chapter 22: Interview Shortlist — Core Java, Spring, SQL, System Design & Coding](./Chapter22_InterviewShortlistAndCoding.md)
