@@ -95,8 +95,12 @@ try {
     RecordMetadata metadata = producer.send(record).get();
     System.out.println("Partition: " + metadata.partition());
     System.out.println("Offset: " + metadata.offset());
-} catch (InterruptedException | ExecutionException e) {
-    e.printStackTrace();
+} catch (InterruptedException e) {
+    Thread.currentThread().interrupt();  // Restore interrupt status
+    throw new RuntimeException("Interrupted while sending record", e);
+} catch (ExecutionException e) {
+    // Send failed - propagate the underlying cause instead of swallowing it
+    throw new RuntimeException("Failed to send record", e.getCause());
 }
 ```
 
@@ -120,7 +124,7 @@ producer.send(record, (metadata, exception) -> {
     if (exception == null) {
         System.out.println("Success: " + metadata.offset());
     } else {
-        exception.printStackTrace();
+        log.error("Async send failed", exception);
     }
 });
 ```
@@ -269,7 +273,7 @@ while (true) {
         // Commit only after successful processing
         consumer.commitSync();
     } catch (Exception e) {
-        e.printStackTrace();
+        log.error("Failed to process records; offset not committed, will retry on next poll", e);
         // Don't commit - next poll will retry
     }
 }
@@ -495,7 +499,8 @@ while (true) {
             // Commit offset
             consumer.commitSync();
         } catch (Exception e) {
-            System.out.println("Error, will retry next poll");
+            log.error("Failed to process record at offset {}, will retry next poll",
+                      record.offset(), e);
             // Don't commit - will retry
         }
     }

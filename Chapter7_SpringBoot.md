@@ -757,6 +757,7 @@ public class InventoryService {
             boolean reserved = performReservation(order.getItems());
             kafkaTemplate.send("inventory-reserved", convertToJson(order));
         } catch (Exception e) {
+            log.error("Inventory reservation failed for order {}", order.getId(), e);
             kafkaTemplate.send("inventory-reservation-failed", convertToJson(order));
         }
     }
@@ -772,6 +773,7 @@ public class PaymentService {
             processPayment(order.getPaymentDetails());
             kafkaTemplate.send("payment-processed", convertToJson(order));
         } catch (Exception e) {
+            log.error("Payment processing failed for order {}", order.getId(), e);
             kafkaTemplate.send("payment-failed", convertToJson(order));
             // Inventory service listens and compensates
         }
