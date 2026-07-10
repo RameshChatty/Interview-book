@@ -90,7 +90,7 @@ export async function saveStory(
   const cleanContent = sanitizeContent(input.content);
   const now = new Date();
   const publishedAt = input.status === "published" ? now : null;
-  const readingMinutes = String(estimateReadingMinutes(cleanContent));
+  const readingMinutes = estimateReadingMinutes(cleanContent);
   const summary = input.summary?.trim() || excerpt(cleanContent);
 
   let targetId = storyId;

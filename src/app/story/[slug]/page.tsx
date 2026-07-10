@@ -62,7 +62,9 @@ export default async function StoryPage({ params }: StoryPageProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd).replaceAll("<", "\\u003c"),
+        }}
       />
       <article className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,760px)_260px] lg:justify-center">
@@ -122,6 +124,7 @@ export default async function StoryPage({ params }: StoryPageProps) {
                   alt={story.title}
                   fill
                   priority
+                  unoptimized
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 760px"
                 />

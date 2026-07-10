@@ -47,7 +47,7 @@ export async function toggleLike(storyId: string): Promise<LikeResult> {
 
   await db
     .update(storyTable)
-    .set({ likeCount: String(count) })
+    .set({ likeCount: Number(count) })
     .where(eq(storyTable.id, storyId));
 
   const [row] = await db

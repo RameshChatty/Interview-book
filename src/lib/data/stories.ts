@@ -1,4 +1,4 @@
-import { and, desc, eq, inArray, sql } from "drizzle-orm";
+import { and, desc, eq, inArray } from "drizzle-orm";
 
 import { db } from "@/lib/db";
 import { isDatabaseConfigured } from "@/lib/env";
@@ -33,8 +33,8 @@ function toSummary(
     summary: story.summary,
     coverImage: story.coverImage,
     status: story.status,
-    readingMinutes: Number(story.readingMinutes) || 1,
-    likeCount: Number(story.likeCount) || 0,
+    readingMinutes: story.readingMinutes || 1,
+    likeCount: story.likeCount || 0,
     publishedAt: story.publishedAt,
     createdAt: story.createdAt,
     updatedAt: story.updatedAt,
@@ -124,7 +124,7 @@ export async function getPopularStories(limit = 5): Promise<StorySummary[]> {
     .from(storyTable)
     .innerJoin(userTable, eq(storyTable.authorId, userTable.id))
     .where(eq(storyTable.status, "published"))
-    .orderBy(desc(sql`(${storyTable.likeCount})::int`))
+    .orderBy(desc(storyTable.likeCount))
     .limit(limit);
   return attachCategories(rows);
 }

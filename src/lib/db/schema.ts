@@ -2,6 +2,7 @@ import { relations } from "drizzle-orm";
 import {
   boolean,
   index,
+  integer,
   pgTable,
   primaryKey,
   text,
@@ -103,8 +104,8 @@ export const story = pgTable(
     authorId: text("author_id")
       .notNull()
       .references(() => user.id, { onDelete: "cascade" }),
-    likeCount: text("like_count").notNull().default("0"),
-    readingMinutes: text("reading_minutes").notNull().default("1"),
+    likeCount: integer("like_count").notNull().default(0),
+    readingMinutes: integer("reading_minutes").notNull().default(1),
     publishedAt: timestamp("published_at"),
     createdAt: timestamp("created_at")
       .$defaultFn(() => new Date())

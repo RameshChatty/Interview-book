@@ -1,5 +1,5 @@
 {
-  "id": "3c4432a9-1317-47d3-ad2b-0146eca22a8e",
+  "id": "3403d613-9c4a-4153-8c36-cc405335fd09",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -403,17 +403,17 @@
         },
         "like_count": {
           "name": "like_count",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true,
-          "default": "'0'"
+          "default": 0
         },
         "reading_minutes": {
           "name": "reading_minutes",
-          "type": "text",
+          "type": "integer",
           "primaryKey": false,
           "notNull": true,
-          "default": "'1'"
+          "default": 1
         },
         "published_at": {
           "name": "published_at",

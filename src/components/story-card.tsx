@@ -62,6 +62,7 @@ export function StoryCard({ story }: { story: StorySummary }) {
             src={story.coverImage}
             alt={story.title}
             fill
+            unoptimized
             className="object-cover"
             sizes="160px"
           />
